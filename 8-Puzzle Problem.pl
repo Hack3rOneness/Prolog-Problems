@@ -81,3 +81,23 @@ append([], L, L).
 member(X, [X|_]).
 member(X, [_|T]):-
     member(X, T).
+
+
+%-----------------------Output Queries---------------------------------->
+
+?- test(Plan).
+Initial state:
+at(tile7,9)
+at(tile1,8)
+at(tile5,7)
+at(tile6,6)
+at(tile2,5)
+at(empty,4)
+at(tile8,3)
+at(tile3,2)
+at(tile4,1)
+
+Goal state:
+[at(tile1,1),at(tile2,2),at(tile3,3),at(tile4,4),at(empty,5),at(tile5,6),at(tile6,7),at(tile7,8),at(tile8,9)]
+
+false.
