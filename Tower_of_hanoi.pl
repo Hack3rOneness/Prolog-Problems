@@ -14,7 +14,7 @@ move(N,X,Y,Z):-                % Another Function as move with variables are N,X
     move(M,Z,Y,X).
 
 
-%--------------------------Output Queries-------------------------------
+%--------------------------Output Queries---------------------------------------------------------------------------------
 
 ?- move(3,a,b,c).
 Move disk from a to b
