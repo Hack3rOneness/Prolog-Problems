@@ -72,3 +72,35 @@ do_all([],_Allgoals).              /* finished */
 achieve(on(A,B)) :-
      r_put_on(A,B).
 
+%-------------------------------------------Output Queries------------------------------->
+
+?- on(a,b).
+true.
+
+?- move(a,b,table).
+true.
+
+?- clear(table).
+true ;
+false.
+
+?- r_put_on(A,B).
+A = a,
+B = b ;
+A = b,
+B = c ;
+A = c,
+B =  (table).
+
+?- clear_off(A).
+A =  (table) ;
+false.
+
+%----------------------Goal---------
+?- achieve(on(A,B)).
+A = a,
+B = b ;
+A = b,
+B = c ;
+A = c,
+B =  (table).
